@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bem-vindo ao chat!</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1><i class="fas fa-comments"></i> Chat assistente</h1>
+            <div class="status">
+                <div class="status-indicator"></div>
+                <span class="status-text">Online</span>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chat">
+            <div class="message message-bot">
+                Olá! Como posso ajudar você hoje?
+                <div class="message-time">Agora</div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="input" placeholder="Digite sua mensagem..." autocomplete="off">
+            <button onclick="enviarMensagem()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
