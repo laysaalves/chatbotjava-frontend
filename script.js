@@ -67,7 +67,7 @@ async function enviarMensagem() {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({'msg':mensagem}),
+            body: JSON.stringify({ 'userInput': mensagem })
         });
         const textoDaResposta = await resposta.text();
         console.log(textoDaResposta);
