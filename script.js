@@ -79,7 +79,7 @@ async function enviarMensagem() {
         console.log(textoDaResposta);
         novaBolhaBot.innerHTML = textoDaResposta.replace(/\n/g, '<br>');
         
-        contexto.push(`IA: ${textoDaResposta}`);              
+        contexto.push(`${textoDaResposta}`);              
 
         const timeDiv = document.createElement('div');
         timeDiv.className = 'message-time';
